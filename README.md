@@ -22,6 +22,7 @@ USE: Java 8+,  Gradle, Selenide, TestNg, GitHub
    1.2. либо https://docs.docker.com/desktop/install/windows-install/ если у вас windows
 
 Далее гайд для Windows:
+
 2. Установка Selenoid - https://github.com/aerokube/selenoid/blob/master/docs/quick-start-guide.adoc
 
    2.1. Качаем CM https://github.com/aerokube/cm/releases/tag/1.8.5
