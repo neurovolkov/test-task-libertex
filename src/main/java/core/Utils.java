@@ -10,7 +10,9 @@ import static core.constant.DateFormattersProvider.DATE_FORMATTERS;
 
 public class Utils {
 
-    public static boolean  isAdult(String date) {
+    public static final Logger log = Logger.getLogger("main stream");
+
+    public static boolean isAdult(String date) {
         for (DateTimeFormatter formatter : DATE_FORMATTERS) {
             try {
                 LocalDate dateOfBirth = formatter.parse(date, LocalDate::from);
@@ -21,6 +23,4 @@ public class Utils {
         }
         throw new InvalidDateFormatException("Unknown date format");
     }
-
-    public static final Logger log = Logger.getLogger("main stream");
 }
